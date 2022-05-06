@@ -139,6 +139,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+app.get("/arafin", (req, res) => {
+  res.send("update heroku server!");
+});
 
 function verifyToken(token) {
   let email;
